@@ -65,10 +65,12 @@ void SYSTEM_Initialize(void){
 void OSCILLATOR_Initialize(void){
     // SCS FOSC; SPLLEN disabled; IRCF 8MHz_HF; 
     OSCCON = 0x60;
+    /*OSCCONbits.IRCF=0b0110;
+    OSCCONbits.SCS=0b00;*/
     // TUN 0; 
     OSCTUNE = 0x00;
     // Wait for PLL to stabilize
-    while(SPLLEN == 0)
+    while(SPLLEN == 1)
     {
     }
 }

@@ -19,16 +19,19 @@ void EUSART_Initialize(void){
     // Set the EUSART module to the options selected in the user interface.
     // ABDOVF no_overflow; SCKP Non-Inverted; BRG16 16bit_generator; WUE disabled; ABDEN disabled; 
     BAUDCON = 0x08;
-
     // SPEN enabled; RX9 8-bit; CREN enabled; ADDEN disabled; SREN disabled; 
     RCSTA = 0x90;       //EUSART Receive Register
-
     // TX9 8-bit; TX9D 0; SENDB sync_break_complete; TXEN enabled; SYNC asynchronous; BRGH hi_speed; CSRC slave; 
-    TXSTA = 0x24;
+    TXSTA = 0X20;
 
+    /*TXSTAbits.SYNC=0; //Transmisión Asíncrona
+    TXSTAbits.TXEN=1; //Habilitación transmisión
+*/    
+
+    //RCSTAbits.SPEN=1; //Habilita puerto serie
     // Baud Rate = 9600; SP1BRGL 64; 
-    SPBRG = 0x12;
-    SPBRGH = 0x00;
+    SPBRG = 51;
+    SPBRGH = 0;
     // initializing the driver state
     eusartTxHead = 0;
     eusartTxTail = 0;
@@ -64,7 +67,7 @@ void EUSART_Write(uint8_t txData){
     {
     }
 
-    if(0 == PIE2bits.TXIE)
+    if(0 == PIE1bits.TXIE)
     {
         TXREG = txData;
     }
@@ -82,11 +85,6 @@ void EUSART_Write(uint8_t txData){
 }
 
 void EUSART_Transmit_ISR(void){
-<<<<<<< HEAD
-
-=======
-
->>>>>>> gabriela
     // add your EUSART interrupt custom code
     if(sizeof(eusartTxBuffer) > eusartTxBufferRemaining)
     {

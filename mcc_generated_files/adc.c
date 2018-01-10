@@ -1,7 +1,4 @@
-/**
-  ADC Generated Driver File
- * 
- * 
+/** ADC Generated Driver File
 **/
 
 #include <xc.h>
@@ -15,9 +12,9 @@ void ADC_Initialize(void){
     // GO_nDONE stop; ADON enabled; CHS AN0; 
     ADCON0 = 0x01;      //chanel selection
     // ADFM right; ADPREF VDD; ADCS Frc; 
-    ADCON1 = 0xF0;          //adc voltage reference
+    ADCON1 = 0x00;          //adc voltage reference
     // TRIGSEL no_auto_trigger; 
-    ADCON2 = 0x00;
+    ADCON2 = 0x87;
     // ADRESL 0; 
     ADRESL = 0x00;   //A/D RESULT REGISTER LOW BYTE
     // ADRESH 0;     //A/D RESULT REGISTER HIGH BYTE

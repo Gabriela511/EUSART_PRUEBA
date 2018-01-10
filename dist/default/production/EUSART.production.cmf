@@ -1,0 +1,786 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\EUSART.production.obj
+cinit CODE 0 988 988 1A 1
+text0 CODE 0 6F6 6F6 9E 1
+text1 CODE 0 33E 33E 11E 1
+text2 CODE 0 9DA 9DA A 1
+text3 CODE 0 828 828 3A 1
+text4 CODE 0 7E6 7E6 42 1
+text5 CODE 0 794 794 52 1
+text6 CODE 0 45C 45C F8 1
+text7 CODE 0 554 554 F4 1
+text8 CODE 0 862 862 38 1
+text9 CODE 0 648 648 AE 1
+text10 CODE 0 9BA 9BA 12 1
+text11 CODE 0 960 960 28 1
+text12 CODE 0 9CC 9CC E 1
+text13 CODE 0 8D2 8D2 34 1
+text14 CODE 0 9A2 9A2 18 1
+text15 CODE 0 9E4 9E4 4 1
+text16 CODE 0 89A 89A 38 1
+text18 CODE 0 906 906 2E 1
+text19 CODE 0 934 934 2C 1
+text20 CODE 0 9E8 9E8 4 1
+cstackCOMRAM COMRAM 1 1 1 36 1
+cstackBANK0 BANK0 1 60 60 C 1
+temp COMRAM 1 4D 4D 1 1
+intcode CODE 0 8 8 C2 1
+smallconst SMALLCONST 0 300 300 3E 1
+bssCOMRAM COMRAM 1 37 37 16 1
+$C:\Users\darka\AppData\Local\Temp\saks.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 CA CA 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6C-FF 1
+RAM 200-2FF 1
+SFR F53-FFF 1
+BANK0 6C-FF 1
+BANK2 200-2FF 1
+CONST 4-7 1
+CONST CE-2FF 1
+CONST 9EC-1FFF 1
+STACK 200-2FF 1
+SMALLCONST 9EC-1FFF 1
+CODE 4-7 1
+CODE CE-2FF 1
+CODE 9EC-1FFF 1
+BIGRAM 4E-5F 1
+BIGRAM 6C-FF 1
+BIGRAM 200-2FF 1
+COMRAM 4E-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 9EC-1FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\EUSART.production.obj
+8 intcode CODE >71:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+8 intcode CODE >51:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+52 intcode CODE >54:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+5C intcode CODE >56:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+60 intcode CODE >57:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+62 intcode CODE >58:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+6C intcode CODE >60:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+70 intcode CODE >61:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+72 intcode CODE >62:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+7A intcode CODE >64:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+7E intcode CODE >66:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+7E intcode CODE >70:C:\Users\darka\Desktop\EUSART\mcc_generated_files/interrupt_manager.c
+9E8 text20 CODE >74:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9E8 text20 CODE >77:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9EA text20 CODE >78:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+934 text19 CODE >104:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+934 text19 CODE >107:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+938 text19 CODE >111:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+93A text19 CODE >112:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+93C text19 CODE >113:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+93C text19 CODE >116:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+952 text19 CODE >117:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+958 text19 CODE >119:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+95C text19 CODE >120:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+95C text19 CODE >121:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+95E text19 CODE >122:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+906 text18 CODE >87:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+906 text18 CODE >89:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+90C text18 CODE >91:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+922 text18 CODE >92:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+928 text18 CODE >94:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+92C text18 CODE >95:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+92C text18 CODE >96:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+92E text18 CODE >97:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+930 text18 CODE >98:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+930 text18 CODE >100:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+89A text16 CODE >51:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+89C text16 CODE >54:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+8AE text16 CODE >57:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+8B0 text16 CODE >59:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+8B8 text16 CODE >62:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+8BA text16 CODE >65:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+8BE text16 CODE >70:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9E4 text15 CODE >33:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9E4 text15 CODE >35:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9E6 text15 CODE >36:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9A2 text14 CODE >10:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9A2 text14 CODE >13:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9A6 text14 CODE >15:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9AA text14 CODE >17:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9AE text14 CODE >19:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9B2 text14 CODE >21:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9B6 text14 CODE >23:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+9B8 text14 CODE >24:C:\Users\darka\Desktop\EUSART\mcc_generated_files/adc.c
+8D2 text13 CODE >15:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8D2 text13 CODE >17:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8D4 text13 CODE >18:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8D6 text13 CODE >21:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8DA text13 CODE >23:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8DE text13 CODE >25:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8E2 text13 CODE >33:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8E6 text13 CODE >34:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8EA text13 CODE >36:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8EE text13 CODE >37:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8F2 text13 CODE >38:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8F6 text13 CODE >39:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8FA text13 CODE >40:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+8FE text13 CODE >41:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+902 text13 CODE >43:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+904 text13 CODE >44:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+9CC text12 CODE >65:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+9CC text12 CODE >67:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+9D0 text12 CODE >71:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+9D4 text12 CODE >73:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+960 text11 CODE >8:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+960 text11 CODE >13:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+964 text11 CODE >14:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+968 text11 CODE >15:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+96C text11 CODE >20:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+970 text11 CODE >21:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+974 text11 CODE >22:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+976 text11 CODE >27:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+97A text11 CODE >28:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+97E text11 CODE >33:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+982 text11 CODE >34:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+986 text11 CODE >36:C:\Users\darka\Desktop\EUSART\mcc_generated_files/pin_manager.c
+9BA text10 CODE >58:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+9BA text10 CODE >59:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+9BE text10 CODE >60:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+9C2 text10 CODE >61:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+9C6 text10 CODE >62:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+9CA text10 CODE >63:C:\Users\darka\Desktop\EUSART\mcc_generated_files/mcc.c
+648 text9 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+648 text9 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+658 text9 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+666 text9 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+666 text9 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+668 text9 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+670 text9 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+670 text9 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+68E text9 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+68E text9 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+690 text9 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+69C text9 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6A4 text9 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6A4 text9 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6C2 text9 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6C2 text9 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6C4 text9 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6CC text9 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6CC text9 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6D6 text9 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6D8 text9 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6DA text9 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6DE text9 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6E2 text9 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6E6 text9 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+6E8 text9 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+862 text8 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+862 text8 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+866 text8 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+86A text8 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+872 text8 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+876 text8 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+876 text8 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awtoft.c
+554 text7 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+554 text7 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+56E text7 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+57C text7 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+596 text7 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5A4 text7 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5AA text7 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5AE text7 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5B2 text7 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5B6 text7 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5B8 text7 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5BA text7 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5C6 text7 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5D2 text7 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5D6 text7 CODE >135:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5D6 text7 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5DA text7 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5E6 text7 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5EE text7 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5F6 text7 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5FA text7 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5FE text7 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5FE text7 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+602 text7 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+60E text7 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+616 text7 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+61E text7 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+622 text7 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+45C text6 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+45C text6 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+478 text6 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+48A text6 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4B2 text6 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4B4 text6 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4C0 text6 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4CE text6 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4D2 text6 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4D6 text6 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4E0 text6 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4F2 text6 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4FC text6 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+500 text6 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+502 text6 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+508 text6 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+51A text6 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+51A text6 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+524 text6 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+526 text6 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+526 text6 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+52C text6 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+532 text6 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+542 text6 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+794 text5 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+794 text5 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+79C text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7A4 text5 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7A8 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7AA text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7B0 text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7B2 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7B2 text5 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7B6 text5 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7BC text5 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7C8 text5 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7D0 text5 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7D2 text5 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7D2 text5 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7D8 text5 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7DC text5 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7E4 text5 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+7E6 text4 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+7E6 text4 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+7EE text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+7F2 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+7F4 text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+7FA text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+7FC text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+7FC text4 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+800 text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+80C text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+814 text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+81A text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+81E text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+826 text4 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+828 text3 CODE >65:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+82A text3 CODE >66:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+830 text3 CODE >70:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+834 text3 CODE >72:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+838 text3 CODE >73:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+83A text3 CODE >74:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+83A text3 CODE >76:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+83C text3 CODE >77:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+852 text3 CODE >78:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+858 text3 CODE >80:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+85C text3 CODE >81:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+85C text3 CODE >82:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+85E text3 CODE >83:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+85E text3 CODE >84:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+860 text3 CODE >85:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+9DA text2 CODE >128:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+9DC text2 CODE >129:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+9E2 text2 CODE >130:C:\Users\darka\Desktop\EUSART\mcc_generated_files/eusart.c
+33E text1 CODE >464:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+33E text1 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+346 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+348 text1 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+350 text1 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+356 text1 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+358 text1 CODE >543:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+358 text1 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+35C text1 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+382 text1 CODE >822:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+382 text1 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+39A text1 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+39E text1 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3A2 text1 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3AA text1 CODE >1264:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3AA text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3B6 text1 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3D6 text1 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3DA text1 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3E6 text1 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3EC text1 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3F0 text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+3F2 text1 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+434 text1 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+43A text1 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+43A text1 CODE >1525:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+442 text1 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\doprnt.c
+6F6 text0 CODE >8:C:\Users\darka\Desktop\EUSART\main.c
+6F6 text0 CODE >12:C:\Users\darka\Desktop\EUSART\main.c
+6FA text0 CODE >16:C:\Users\darka\Desktop\EUSART\main.c
+6FC text0 CODE >19:C:\Users\darka\Desktop\EUSART\main.c
+6FE text0 CODE >20:C:\Users\darka\Desktop\EUSART\main.c
+6FE text0 CODE >21:C:\Users\darka\Desktop\EUSART\main.c
+702 text0 CODE >22:C:\Users\darka\Desktop\EUSART\main.c
+710 text0 CODE >23:C:\Users\darka\Desktop\EUSART\main.c
+724 text0 CODE >24:C:\Users\darka\Desktop\EUSART\main.c
+764 text0 CODE >25:C:\Users\darka\Desktop\EUSART\main.c
+778 text0 CODE >26:C:\Users\darka\Desktop\EUSART\main.c
+792 text0 CODE >20:C:\Users\darka\Desktop\EUSART\main.c
+988 cinit CODE >2192:C:\Users\darka\AppData\Local\Temp\saks.
+988 cinit CODE >2194:C:\Users\darka\AppData\Local\Temp\saks.
+988 cinit CODE >2197:C:\Users\darka\AppData\Local\Temp\saks.
+988 cinit CODE >2230:C:\Users\darka\AppData\Local\Temp\saks.
+98C cinit CODE >2231:C:\Users\darka\AppData\Local\Temp\saks.
+98E cinit CODE >2232:C:\Users\darka\AppData\Local\Temp\saks.
+98E cinit CODE >2233:C:\Users\darka\AppData\Local\Temp\saks.
+990 cinit CODE >2234:C:\Users\darka\AppData\Local\Temp\saks.
+992 cinit CODE >2235:C:\Users\darka\AppData\Local\Temp\saks.
+994 cinit CODE >2241:C:\Users\darka\AppData\Local\Temp\saks.
+994 cinit CODE >2243:C:\Users\darka\AppData\Local\Temp\saks.
+996 cinit CODE >2244:C:\Users\darka\AppData\Local\Temp\saks.
+998 cinit CODE >2246:C:\Users\darka\AppData\Local\Temp\saks.
+99A cinit CODE >2247:C:\Users\darka\AppData\Local\Temp\saks.
+99C cinit CODE >2248:C:\Users\darka\AppData\Local\Temp\saks.
+99E cinit CODE >2249:C:\Users\darka\AppData\Local\Temp\saks.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwmod@counter 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\EUSART.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hspace_1 6C 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__size_of_ADC_StartConversion 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\EUSART.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\darka\AppData\Local\Temp\saks.obj
+___awtoft@sign 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\EUSART.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+ADC_GetConversion@channel 17 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Lsmallconst 300 0 SMALLCONST 0 smallconst dist/default/production\EUSART.production.obj
+_LATA F89 0 ABS 0 - dist/default/production\EUSART.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production\EUSART.production.obj
+_LATC F8B 0 ABS 0 - dist/default/production\EUSART.production.obj
+_WPUA F77 0 ABS 0 - dist/default/production\EUSART.production.obj
+_WPUB F78 0 ABS 0 - dist/default/production\EUSART.production.obj
+___sp 0 0 STACK 2 stack C:\Users\darka\AppData\Local\Temp\saks.obj
+_main 6F6 0 CODE 0 text0 dist/default/production\EUSART.production.obj
+btemp 4D 0 COMRAM 1 temp dist/default/production\EUSART.production.obj
+__end_of_ADC_GetConversion 8D2 0 CODE 0 text16 dist/default/production\EUSART.production.obj
+start CA 0 CODE 0 init C:\Users\darka\AppData\Local\Temp\saks.obj
+_EUSART_Write 828 0 CODE 0 text3 dist/default/production\EUSART.production.obj
+__size_of___ftmul 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\EUSART.production.obj
+__end_of_EUSART_Initialize 906 0 CODE 0 text13 dist/default/production\EUSART.production.obj
+__Hpowerup CA 0 CODE 0 powerup dist/default/production\EUSART.production.obj
+printf@c 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+printf@f 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+_ADC_StartConversion 9E4 0 CODE 0 text15 dist/default/production\EUSART.production.obj
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\darka\AppData\Local\Temp\saks.obj
+intlevel0 0 0 CODE 0 text C:\Users\darka\AppData\Local\Temp\saks.obj
+intlevel1 0 0 CODE 0 text C:\Users\darka\AppData\Local\Temp\saks.obj
+intlevel2 0 0 CODE 0 text C:\Users\darka\AppData\Local\Temp\saks.obj
+intlevel3 0 0 CODE 0 text C:\Users\darka\AppData\Local\Temp\saks.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\EUSART.production.obj
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\EUSART.production.obj
+wtemp6 4E 0 COMRAM 1 temp dist/default/production\EUSART.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\EUSART.production.obj
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of_EUSART_Transmit_ISR 934 0 CODE 0 text18 dist/default/production\EUSART.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\EUSART.production.obj
+___ftmul@f1 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+___ftmul@f2 22 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+_eusartTxBuffer 3F 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+printf@flag 26 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+printf@prec 27 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__CFG_FOSC$IRCCLKOUT 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production\EUSART.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\EUSART.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production\EUSART.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production\EUSART.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production\EUSART.production.obj
+_ANSELH F7F 0 ABS 0 - dist/default/production\EUSART.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\darka\AppData\Local\Temp\saks.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\darka\AppData\Local\Temp\saks.obj
+__size_of___awtoft 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of_INTERRUPT_InterruptManager CA 0 CODE 0 intcode dist/default/production\EUSART.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\EUSART.production.obj
+__end_of_EUSART_Write 862 0 CODE 0 text3 dist/default/production\EUSART.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\EUSART.production.obj
+main@adc 6A 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.production.obj
+___fttol@f1 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\EUSART.production.obj
+?_printf 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+_ADC_GetConversion 89A 0 CODE 0 text16 dist/default/production\EUSART.production.obj
+__Hintcodelo CA 0 CODE 0 intcodelo dist/default/production\EUSART.production.obj
+___lwmod@divisor 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of___ftmul 648 0 CODE 0 text7 dist/default/production\EUSART.production.obj
+__end_of___fttol 554 0 CODE 0 text6 dist/default/production\EUSART.production.obj
+__end_of___lwdiv 7E6 0 CODE 0 text5 dist/default/production\EUSART.production.obj
+__end_of___lwmod 828 0 CODE 0 text4 dist/default/production\EUSART.production.obj
+_dpowers 301 0 SMALLCONST 0 smallconst dist/default/production\EUSART.production.obj
+_EUSART_Initialize 8D2 0 CODE 0 text13 dist/default/production\EUSART.production.obj
+___lwdiv@quotient 18 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__CFG_USBDIV$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__size_of_putch 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+___lwmod@dividend 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Lintcodelo CA 0 CODE 0 intcodelo dist/default/production\EUSART.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+_PIN_MANAGER_Initialize 960 0 CODE 0 text11 dist/default/production\EUSART.production.obj
+start_initialization 988 0 CODE 0 cinit dist/default/production\EUSART.production.obj
+__end_of_ADC_StartConversion 9E8 0 CODE 0 text15 dist/default/production\EUSART.production.obj
+_OSCCON FD3 0 ABS 0 - dist/default/production\EUSART.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\EUSART.production.obj
+___awtoft 862 0 CODE 0 text8 dist/default/production\EUSART.production.obj
+_eusartRxBuffer 37 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+_ADC_ISR 9E8 0 CODE 0 text20 dist/default/production\EUSART.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of_SYSTEM_Initialize 9CC 0 CODE 0 text10 dist/default/production\EUSART.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of___awtoft 89A 0 CODE 0 text8 dist/default/production\EUSART.production.obj
+_SPBRGH FB0 0 ABS 0 - dist/default/production\EUSART.production.obj
+_SPLLEN 7CDE 0 ABS 0 - dist/default/production\EUSART.production.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.production.obj
+___fttol@exp1 65 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.production.obj
+___fttol@lval 61 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.production.obj
+___ftpack 648 0 CODE 0 text9 dist/default/production\EUSART.production.obj
+__end_of_printf 45C 0 CODE 0 text1 dist/default/production\EUSART.production.obj
+___ftpack@arg 13 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+___ftpack@exp 16 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__end_of___ftpack 6F6 0 CODE 0 text9 dist/default/production\EUSART.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\EUSART.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\EUSART.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\EUSART.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\EUSART.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\EUSART.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\EUSART.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\EUSART.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\EUSART.production.obj
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\EUSART.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\EUSART.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\EUSART.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\EUSART.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\EUSART.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\EUSART.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\EUSART.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\EUSART.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\EUSART.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\EUSART.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\EUSART.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\EUSART.production.obj
+__CFG_BBSIZ$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+___lwdiv@counter 17 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\EUSART.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\EUSART.production.obj
+__smallconst 300 0 SMALLCONST 0 smallconst C:\Users\darka\AppData\Local\Temp\saks.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\EUSART.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\EUSART.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\EUSART.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\EUSART.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\EUSART.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\EUSART.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\EUSART.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\EUSART.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\EUSART.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\EUSART.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\EUSART.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\EUSART.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\EUSART.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\EUSART.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\EUSART.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\EUSART.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\EUSART.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\EUSART.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\EUSART.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\EUSART.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\EUSART.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\EUSART.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\EUSART.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\EUSART.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\EUSART.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\EUSART.production.obj
+__Hinit CE 0 CODE 0 init dist/default/production\EUSART.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\EUSART.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\EUSART.production.obj
+__Htemp 4E 0 COMRAM 1 temp dist/default/production\EUSART.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\EUSART.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\EUSART.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\EUSART.production.obj
+__Linit CA 0 CODE 0 init dist/default/production\EUSART.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\EUSART.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\EUSART.production.obj
+__Ltemp 4D 0 COMRAM 1 temp dist/default/production\EUSART.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\EUSART.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\EUSART.production.obj
+int$flags 4D 0 COMRAM 1 temp dist/default/production\EUSART.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\EUSART.production.obj
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\EUSART.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\EUSART.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\EUSART.production.obj
+__S1 6C 0 ABS 0 - dist/default/production\EUSART.production.obj
+__S2 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_PLLEN$ON 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of_EUSART_Receive_ISR 960 0 CODE 0 text19 dist/default/production\EUSART.production.obj
+___awtoft@c 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\EUSART.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\EUSART.production.obj
+_SYSTEM_Initialize 9BA 0 CODE 0 text10 dist/default/production\EUSART.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\EUSART.production.obj
+__Hramtop 300 0 RAM 0 ramtop dist/default/production\EUSART.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\EUSART.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\EUSART.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\EUSART.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\EUSART.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\EUSART.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\EUSART.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\EUSART.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\EUSART.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\EUSART.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\EUSART.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\EUSART.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\EUSART.production.obj
+?___awtoft 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+_INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/default/production\EUSART.production.obj
+_ADC_Initialize 9A2 0 CODE 0 text14 dist/default/production\EUSART.production.obj
+_RCSTAbits FAB 0 ABS 0 - dist/default/production\EUSART.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production\EUSART.production.obj
+?_ADC_GetConversion 13 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__CFG_CPUDIV$NOCLKDIV 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__ptext10 9BA 0 CODE 0 text10 dist/default/production\EUSART.production.obj
+__ptext11 960 0 CODE 0 text11 dist/default/production\EUSART.production.obj
+__ptext12 9CC 0 CODE 0 text12 dist/default/production\EUSART.production.obj
+__ptext13 8D2 0 CODE 0 text13 dist/default/production\EUSART.production.obj
+__ptext14 9A2 0 CODE 0 text14 dist/default/production\EUSART.production.obj
+__ptext15 9E4 0 CODE 0 text15 dist/default/production\EUSART.production.obj
+__ptext16 89A 0 CODE 0 text16 dist/default/production\EUSART.production.obj
+__ptext18 906 0 CODE 0 text18 dist/default/production\EUSART.production.obj
+__ptext19 934 0 CODE 0 text19 dist/default/production\EUSART.production.obj
+__ptext20 9E8 0 CODE 0 text20 dist/default/production\EUSART.production.obj
+_EUSART_Receive_ISR 934 0 CODE 0 text19 dist/default/production\EUSART.production.obj
+__CFG_PCLKEN$ON 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of_PIN_MANAGER_Initialize 988 0 CODE 0 text11 dist/default/production\EUSART.production.obj
+___ftmul 554 0 CODE 0 text7 dist/default/production\EUSART.production.obj
+___fttol 45C 0 CODE 0 text6 dist/default/production\EUSART.production.obj
+_BAUDCON FB8 0 ABS 0 - dist/default/production\EUSART.production.obj
+___lwdiv 794 0 CODE 0 text5 dist/default/production\EUSART.production.obj
+___lwmod 7E6 0 CODE 0 text4 dist/default/production\EUSART.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\EUSART.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\EUSART.production.obj
+__CFG_BORV$19 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\EUSART.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\EUSART.production.obj
+?___ftpack 13 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+_printf 33E 0 CODE 0 text1 dist/default/production\EUSART.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+main@temp 68 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\EUSART.production.obj
+___lwdiv@divisor 15 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\EUSART.production.obj
+stackhi 2FF 0 ABS 0 - C:\Users\darka\AppData\Local\Temp\saks.obj
+stacklo 200 0 ABS 0 - C:\Users\darka\AppData\Local\Temp\saks.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\EUSART.production.obj
+_OSCTUNE F9B 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\EUSART.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\EUSART.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+___ftmul@cntr 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__pbssCOMRAM 37 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+___ftmul@sign 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__end_of_ADC_Initialize 9BA 0 CODE 0 text14 dist/default/production\EUSART.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\EUSART.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\EUSART.production.obj
+printf@ap 24 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+end_of_initialization 994 0 CODE 0 cinit dist/default/production\EUSART.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\EUSART.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\EUSART.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__size_of_printf 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+___lwdiv@dividend 13 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+?___ftmul 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+?___fttol 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+?___lwdiv 13 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+?___lwmod 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\EUSART.production.obj
+__Lramtop 300 0 RAM 0 ramtop dist/default/production\EUSART.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\EUSART.production.obj
+__pcinit 988 0 CODE 0 cinit dist/default/production\EUSART.production.obj
+__ptext0 6F6 0 CODE 0 text0 dist/default/production\EUSART.production.obj
+__ptext1 33E 0 CODE 0 text1 dist/default/production\EUSART.production.obj
+__ptext2 9DA 0 CODE 0 text2 dist/default/production\EUSART.production.obj
+__ptext3 828 0 CODE 0 text3 dist/default/production\EUSART.production.obj
+__ptext4 7E6 0 CODE 0 text4 dist/default/production\EUSART.production.obj
+__ptext5 794 0 CODE 0 text5 dist/default/production\EUSART.production.obj
+__ptext6 45C 0 CODE 0 text6 dist/default/production\EUSART.production.obj
+__ptext7 554 0 CODE 0 text7 dist/default/production\EUSART.production.obj
+__ptext8 862 0 CODE 0 text8 dist/default/production\EUSART.production.obj
+__ptext9 648 0 CODE 0 text9 dist/default/production\EUSART.production.obj
+_eusartTxBufferRemaining 4A 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\EUSART.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\EUSART.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\EUSART.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\EUSART.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\EUSART.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\EUSART.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\EUSART.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\EUSART.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\EUSART.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\EUSART.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\EUSART.production.obj
+__ramtop 300 0 RAM 0 ramtop C:\Users\darka\AppData\Local\Temp\saks.obj
+__size_of_ADC_ISR 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Lpowerup CA 0 CODE 0 powerup dist/default/production\EUSART.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\EUSART.production.obj
+__psmallconst 300 0 SMALLCONST 0 smallconst dist/default/production\EUSART.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\EUSART.production.obj
+__size_of_ADC_GetConversion 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\EUSART.production.obj
+EUSART_Write@txData 13 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+___ftmul@exp 28 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__end_of__initialization 994 0 CODE 0 cinit dist/default/production\EUSART.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\EUSART.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+_eusartRxCount 47 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+__size_of_EUSART_Transmit_ISR 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\EUSART.production.obj
+__CFG_HFOFST$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+___ftpack@sign 17 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+putch@txData 14 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+__end_of_main 794 0 CODE 0 text0 dist/default/production\EUSART.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\EUSART.production.obj
+printf@val 28 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+_ANSEL F7E 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of_dpowers 30B 0 SMALLCONST 0 smallconst dist/default/production\EUSART.production.obj
+_RCREG FAE 0 ABS 0 - dist/default/production\EUSART.production.obj
+_RCSTA FAB 0 ABS 0 - dist/default/production\EUSART.production.obj
+_SPBRG FAF 0 ABS 0 - dist/default/production\EUSART.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\EUSART.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\EUSART.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\EUSART.production.obj
+_TXREG FAD 0 ABS 0 - dist/default/production\EUSART.production.obj
+_TXSTA FAC 0 ABS 0 - dist/default/production\EUSART.production.obj
+__end_of_putch 9E4 0 CODE 0 text2 dist/default/production\EUSART.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\EUSART.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\EUSART.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\EUSART.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\EUSART.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\EUSART.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\EUSART.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+_putch 9DA 0 CODE 0 text2 dist/default/production\EUSART.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+___fttol@sign1 60 0 BANK0 1 cstackBANK0 dist/default/production\EUSART.production.obj
+__end_of_OSCILLATOR_Initialize 9DA 0 CODE 0 text12 dist/default/production\EUSART.production.obj
+__initialization 988 0 CODE 0 cinit dist/default/production\EUSART.production.obj
+__CFG_PWRTEN$ON 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+_EUSART_Transmit_ISR 906 0 CODE 0 text18 dist/default/production\EUSART.production.obj
+_eusartRxHead 49 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+_eusartRxTail 48 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\EUSART.production.obj
+__size_of_EUSART_Receive_ISR 0 0 ABS 0 - dist/default/production\EUSART.production.obj
+__Hsmallconst 33E 0 SMALLCONST 0 smallconst dist/default/production\EUSART.production.obj
+__end_of_ADC_ISR 9EC 0 CODE 0 text20 dist/default/production\EUSART.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\EUSART.production.obj
+_eusartTxHead 4C 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+_eusartTxTail 4B 0 COMRAM 1 bssCOMRAM dist/default/production\EUSART.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\EUSART.production.obj
+__Hintcode CA 0 CODE 0 intcode dist/default/production\EUSART.production.obj
+___ftmul@f3_as_product 29 0 COMRAM 1 cstackCOMRAM dist/default/production\EUSART.production.obj
+_OSCILLATOR_Initialize 9CC 0 CODE 0 text12 dist/default/production\EUSART.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text1 0 33E 33E 6AE 1
+cstackCOMRAM 1 1 1 4D 1
+cstackBANK0 1 60 60 C 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 C6 1
+smallconst 0 300 300 3E 1
+config 0 300000 300000 E 1
